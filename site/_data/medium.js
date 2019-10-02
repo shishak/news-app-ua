@@ -1,7 +1,7 @@
 var axios  = require('axios');
 var toJSON = require('xml2js').parseString;
 
-var url = process.env.MEDIUM_FEED ||'https://medium.com/feed/netlify';
+var url = process.env.MEDIUM_FEED ||'http://www.pipes.digital/feed/l9vzKd91';
 
 module.exports = () => {
   return new Promise((resolve, reject) => {
