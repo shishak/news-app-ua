@@ -10,6 +10,6 @@ permalink: posts/{{ item.path }}/index.html
 <p class="meta">Published on {{ item.pubDate | date }} <br/>by {{ item['dc:creator'] }}</p>
 <h2>{{ item.title }}</h2>
 <div class="post-content">
-  {{ item['content:encoded'] | safe }}
+  {{ item.description | safe }}
 </div>
 
