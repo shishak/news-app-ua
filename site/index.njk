@@ -9,7 +9,7 @@ title: Articles from Medium
   <li>
     <p class="meta">Published on {{ item.pubDate | date }} by {{ item['dc:creator'] }}</p>
     <h3><a href="/posts/{{ item.path }}">{{ item.title }}</a></h3>
-    {{ item.description }}
+    {{ item.description | safe }}
   </li>
  {% endfor %}
 </ul>
