@@ -1,7 +1,7 @@
 var axios  = require('axios');
 var toJSON = require('xml2js').parseString;
 
-var url = process.env.MEDIUM_FEED ||'http://www.pipes.digital/feed/l9vzKd91';
+var url = process.env.MEDIUM_FEED ||'http://ftr.fivefilters.org/makefulltextfeed.php?use_extracted_title=1&url=createfeed.fivefilters.org%2Fextract.php%3Furl%3Dhttps%253A%252F%252Fwww.ukrinform.ua%252Fblock-lastnews%26in_id_or_class%3DotherNews%26url_contains%3D';
 
 module.exports = () => {
   return new Promise((resolve, reject) => {
